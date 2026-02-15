@@ -29,6 +29,10 @@ addBtn.addEventListener("click", function () {
   list.appendChild(li);
   input.value = "";
 });
+input.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") addBtn.click();
+});
+
 removeBtn.addEventListener("click", function () {
   const items = list.querySelectorAll("li");
   items.forEach((item) => {
