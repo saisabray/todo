@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background:
+    linear-gradient(135deg, rgba(224, 231, 255, 0.7), rgba(248, 251, 255, 0.7)),
+    url("/images/Checklist.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+section {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 30px;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+#section-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+#input {
+  background: #a49d9d5c;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+::placeholder {
+  color: rgba(157, 157, 157, 0.664);
+}
+#input:focus {
+  border: 3px solid rgba(0, 0, 0, 0.543);
+}
+#add-btn {
+  background: rgb(30, 119, 5);
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+#add-btn:hover {
+  background: rgba(16, 173, 8, 0.853);
+}
+#remove-btn,
+.remove-btn {
+  background: rgba(247, 2, 2, 0.949);
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  margin-left: 10px;
+}
+#list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0;
+}
+#list li {
+  background: rgb(249, 249, 249);
+  list-style: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
